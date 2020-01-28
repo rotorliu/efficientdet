@@ -1,7 +1,3 @@
-"""
-@author: Viet Nguyen <nhviet1009@gmail.com>
-"""
-
 import argparse
 import torch
 from src.config import COCO_CLASSES, colors
@@ -10,7 +6,8 @@ import numpy as np
 
 
 def get_args():
-    parser = argparse.ArgumentParser("You Only Look Once: Unified, Real-Time Object Detection")
+    parser = argparse.ArgumentParser(
+        "EfficientDet: Scalable and Efficient Object Detection implementation by Signatrix GmbH")
     parser.add_argument("--image_size", type=int, default=512, help="The common width and height for all images")
     parser.add_argument("--cls_threshold", type=float, default=0.5)
     parser.add_argument("--nms_threshold", type=float, default=0.5)
